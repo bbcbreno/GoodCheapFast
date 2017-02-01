@@ -1,0 +1,16 @@
+<ion-content padding>
+  <div class="div-content">
+    <ion-item>
+      <ion-label> GOOD</ion-label>
+      <ion-toggle checked="false" [(ngModel)]="good" color="primary" (ionChange)="verifyGood(good)"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label> CHEAP</ion-label>
+      <ion-toggle checked="false" [(ngModel)]="cheap" color="secondary" (ionChange)="verifyCheap(cheap)"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label> FAST</ion-label>
+      <ion-toggle checked="false" [(ngModel)]="fast" color="danger" (ionChange)="verifyFast(fast)"></ion-toggle>
+    </ion-item>
+  </div>
+</ion-content>
